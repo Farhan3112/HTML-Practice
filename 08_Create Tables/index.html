@@ -1,0 +1,223 @@
+<!-- https://validator.w3.org/ -->
+
+<!--To get Picturs and placehlders-->
+<!-- https://loremipsum.io/21-of-the-best-placeholder-image-generators -->
+<!-- https://unsplash.com/ -->
+<!-- https://www.pexels.com/ -->
+<!-- https://gratisography.com/ -->
+<!-- https://pixabay.com/ -->
+
+<!--To resize any image-->
+<!-- https://www.irfanview.com/ -->
+
+<!--Image compression(shrink file size)-->
+<!-- https://tinypng.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- user can see this -> metadata -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Farhan">
+    <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML.">
+    <title>My First Web Page</title>
+    <!--Relative reference-->
+    <link rel="icon" href="html5.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<!-- user can see this on browser -->
+
+<body>
+    <header>
+    <!-- Heading and paragraph are block level elements,as they start on a new line -->
+    <!-- Heading(topic) -->
+    <h1>My Goals for the Year</h1>
+
+    <!--if there are are more than one nav, then label them for screen reader-->
+    <nav aria-label="primary-navigation">
+        <!-- <h2 id="primary-navigation">Primary Navigation</h2> -->
+        <ul>
+            <li>
+                <!--html is id here-->
+                <!--Internal Reference-->
+                <a href="#html">Learn HTML</a>              
+            </li>
+            <li>
+                <!--vacation is id here-->
+                <!--Internal Reference-->
+                <a href="#vacation">Planning a Vacation</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+
+    <hr>
+
+    <main>
+    <article id="html">
+    <!-- subtopic -->
+    <h2>I'm Ready to learn HTML</h2>
+    <section>
+        <h3>HTML5</h3>
+    <!-- paragraph tag -->
+    <p>This is my first web page.</p>
+    <!--Alt ->If picture does not show this text will show,  title ->Shows when hover the image, Do provide width and height in img element-->
+    <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="I am learning HTML5" width="300" height="300">
+    <!--we can put anything in figure element-->
+    <figure>
+        <figcaption>An Example of HTML5 code</figcaption>
+        <p>
+            <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+        </p>
+    </figure>
+</section>
+
+    <section>
+    <h3>My DAily Schedule</h3>
+    <p>Let me tell you how:</p>
+    <!-- ordered list -->
+    <ol>
+        <!-- html entities that create space -->
+        <li>...I learn more about web dev.</li>
+        <li>...I plan out my Schedule</li>
+        <li>...I use resources from <abbr title="Mozilla Developer network">
+            <!--Absolute reference-->
+            <a href="https://developer.mozilla.org/">MDN</a>
+        </abbr></li>
+    </ol>
+    <aside>
+        <details>
+        <summary>Guess the <mark>number of hours</mark> i code per day</summary>
+            <p>I start at <time datetime="08:00">8 am</time> and i write code for <time datetime="PT3H">3 hours</time> every morning</p>
+        </details>
+    </aside>
+
+    <br>
+
+    <table>
+        <caption>My Daily Schedule</caption>
+        <thead>
+        <tr>
+            <th>&nbsp;</th>
+            <th scope="col">Time</th>
+            <th scope="col">Activity</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">Morning</th>
+            <td>
+                <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+            </td>
+            <td>Write code</td>
+        </tr>
+        <tr>
+            <th scope="row">Break</th>
+            <td>
+                <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+            </td>
+            <td>Eat lunch</td>
+        </tr>
+        <tr>
+            <th scope="row">Afternoon</th>
+            <td>
+                <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
+            </td>
+            <td>Study for other Cources</td>
+        </tr>
+            
+        <tr>
+            <th scope="row">Evening</th>
+            <td rowspan="2">All Other Time</td>
+            <td>Free Time</td>
+        </tr>
+        <tr>
+            <th scope="row">Night</th>
+            <td>Sleep</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">And that's what I do everyday, 5days a week. Just eat, sleep, code ..and recharge!</td>
+        </tr>
+    </tfoot>
+    </table>
+</section>
+    </article>
+
+    <hr>
+    <!--br*150 ->150 lines of break-->
+
+    <article id="vacation">
+    <!-- em and strong are inline element,it did not create a break in a line and did create any extra space around it -->
+    <h2>I Am Also Planning A Vacation</h2>
+    <p>I've been working hard and <em>really need a gateway.</em></p>
+    <p>I live in <abbr title="Kansas">KS</abbr> so i want visit a beach.</p>
+
+    <section>
+    <h3>Place I'd like To visit</h3>
+    <!-- unordered list -->
+    <!-- extra space is created by paragraph not list items -->
+    <ul>
+        <li>
+            <p>I've heard good things about the Caribian.</p>
+            <!--figcaption ->directly realted to image, inside figure(also give indentation) element-->
+            <figure>
+            <!--Can chech width and height at bottom of Vscode, loading ->by default eager and lazy->means it will only load when you scroll to it-->
+            <img src="img/caribbean.jpg" alt="Caribbian beach" title="I want to visit a Caibbean Beach." width="400" height="225" loading="lazy">
+            <figcaption>
+                Caribbean Beach gateway
+            </figcaption>
+            </figure>
+        </li>
+        <li>
+            <p>I've heard good things about going here:</p>
+            <address>
+                Margaritavilla Island Reserve Riviera Cancun <br>
+                Bahia Petempich Puerto morelos, Mexico <br>
+                Colonia Morelos, Mexico 77580
+            </address>
+            <figure>
+            <img src="img/vacation.jpg" alt="Cancun Vacation" title="It's 5 o'Clock Somewhere!" width="400" height="267" loading="lazy">
+            <figcaption>
+                A Caribbean Vacation Image
+            </figcaption>
+            </figure>
+        </li>
+    </ul>
+    </section>
+    <!-- TODO: Add more places -->
+
+    <section>
+    <h3>Places I Want To Avoid</h3>
+    <!-- description list -->
+    <dl>
+        <dt>North Pole</dt> <!--Description term-->
+        <dd>I hear his is <strong>cold</strong>!</dd> <!--Description detail-->
+
+        <dt>South Pole</dt>
+        <dd>This is also cold.</dd>
+
+        <dt>Mountain Tops</dt>
+        <dd>These are also cold.</dd>
+    </dl>
+</section>
+    </article>
+    </main>
+
+    <hr>
+
+    <footer>
+    <!-- https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references -->
+    <!-- less than entity(&lt), greater than(gt), copywrite(copy) -->
+     <p>
+    &lt;&lt;&lt; &copy;<a href="about.html">Farhan</a> &gt;&gt;&gt;
+    </p>
+    <p>
+        <a href="#">Back to Top</a>
+    </p>
+</footer>
+</body>
+
+</html>
